@@ -1,27 +1,87 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Услуги</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
 <header>
-  <nav>
-    <a href="index.html">Главная</a>
-    <a href="services.html">Услуги</a>
-  </nav>
+  <div class="header-inner">
+    <nav>
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="services.html" data-i18n="nav_services">Services</a>
+    </nav>
+
+    <div class="lang-switch" aria-label="Language switcher">
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+      <button type="button" class="lang-btn" data-lang="ru">RU</button>
+    </div>
+  </div>
 </header>
 
 <div class="container">
-  <h1>Наши услуги</h1>
-  <ul>
-    <li>WoW Boost</li>
-    <li>Dungeon Runs</li>
-    <li>Raid Carry</li>
+  <h1 data-i18n="services_title">Our services</h1>
+  <p data-i18n="services_subtitle">Choose what you need and contact us for details.</p>
+
+  <ul class="service-list">
+    <li data-i18n="services_item_1">WoW Boost</li>
+    <li data-i18n="services_item_2">Dungeon Runs</li>
+    <li data-i18n="services_item_3">Raid Carry</li>
   </ul>
 </div>
+
+<script>
+  const translations = {
+    en: {
+      nav_home: "Home",
+      nav_services: "Services",
+      services_title: "Our services",
+      services_subtitle: "Choose what you need and contact us for details.",
+      services_item_1: "WoW Boost",
+      services_item_2: "Dungeon Runs",
+      services_item_3: "Raid Carry"
+    },
+    ru: {
+      nav_home: "Главная",
+      nav_services: "Услуги",
+      services_title: "Наши услуги",
+      services_subtitle: "Выберите нужное и свяжитесь с нами для деталей.",
+      services_item_1: "WoW Boost",
+      services_item_2: "Dungeon Runs",
+      services_item_3: "Raid Carry"
+    }
+  };
+
+  function setActiveLangButton(lang) {
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+      btn.classList.toggle("active", btn.dataset.lang === lang);
+    });
+  }
+
+  function applyLanguage(lang) {
+    const dict = translations[lang] || translations.en;
+
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (dict[key]) el.textContent = dict[key];
+    });
+
+    localStorage.setItem("lang", lang);
+    setActiveLangButton(lang);
+  }
+
+  const savedLang = localStorage.getItem("lang") || "en";
+  applyLanguage(savedLang);
+
+  document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.addEventListener("click", () => applyLanguage(btn.dataset.lang));
+  });
+</script>
 
 </body>
 </html>
