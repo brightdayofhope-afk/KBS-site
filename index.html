@@ -8,40 +8,71 @@
 </head>
 <body>
 
-<header>
+<header class="site-header">
   <div class="header-inner">
-    <nav>
-      <a href="index.html" data-i18n="nav_home">Home</a>
-      <a href="services.html" data-i18n="nav_services">Services</a>
-    </nav>
 
-    <div class="lang-switch" aria-label="Language switcher">
-      <button type="button" class="lang-btn" data-lang="en">EN</button>
-      <button type="button" class="lang-btn" data-lang="ru">RU</button>
+    <!-- LOGO -->
+    <a href="index.html" class="logo" aria-label="Go to homepage">
+      <img src="assets/images/logo.png" alt="KBS - Keep BIS Seller" />
+    </a>
+
+    <!-- SEARCH -->
+    <div class="header-search">
+      <input
+        type="search"
+        placeholder="Search services..."
+        aria-label="Search services"
+      />
     </div>
+
+    <!-- LANGUAGE SWITCH -->
+    <div class="lang-switch" aria-label="Language switcher">
+      <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">
+       EN
+       </button>
+    </div>
+
   </div>
 </header>
 
-<div class="container">
-  <h1 data-i18n="home_title">KBS Services</h1>
-  <p data-i18n="home_subtitle">Game services and boosts. Website in development.</p>
 
-  <div class="services">
-    <div class="service-card">
-      <h3 data-i18n="card_boost_title">WoW Boost</h3>
-      <p data-i18n="card_boost_text">Fast and safe character boosting.</p>
-    </div>
+<div class="container layout">
+  <!-- SIDEBAR -->
+  <aside class="sidebar" aria-label="Service categories">
+    <h2 class="sidebar-title">Categories</h2>
 
-    <div class="service-card">
-      <h3 data-i18n="card_dungeon_title">Dungeon Runs</h3>
-      <p data-i18n="card_dungeon_text">Dungeons with an experienced team.</p>
-    </div>
+    <a class="side-link" href="tbc.html">TBC</a>
+    <a class="side-link" href="leveling.html">Leveling</a>
+    <a class="side-link" href="hardcore.html">Hardcore Services</a>
+    <a class="side-link" href="gearing.html">Gearing</a>
+    <a class="side-link" href="raids.html">Raids</a>
+    <a class="side-link" href="boost.html">Character Boost</a>
+    <a class="side-link" href="pvp.html">PvP</a>
+    <a class="side-link" href="dungeons.html">Dungeons</a>
+  </aside>
 
-    <div class="service-card">
-      <h3 data-i18n="card_raid_title">Raid Carry</h3>
-      <p data-i18n="card_raid_text">Raids of any difficulty level.</p>
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <h1 data-i18n="home_title">KBS Services</h1>
+    <p data-i18n="home_subtitle">Game services and boosts. Website in development.</p>
+
+    <div class="services">
+      <div class="service-card">
+        <h3 data-i18n="card_boost_title">WoW Boost</h3>
+        <p data-i18n="card_boost_text">Fast and safe character boosting.</p>
+      </div>
+
+      <div class="service-card">
+        <h3 data-i18n="card_dungeon_title">Dungeon Runs</h3>
+        <p data-i18n="card_dungeon_text">Dungeons with an experienced team.</p>
+      </div>
+
+      <div class="service-card">
+        <h3 data-i18n="card_raid_title">Raid Carry</h3>
+        <p data-i18n="card_raid_text">Raids of any difficulty level.</p>
+      </div>
     </div>
-  </div>
+  </main>
 </div>
 
 <!-- i18n (EN default, RU optional) -->
