@@ -2,7 +2,7 @@
 
 const translations = {
   en: {
-    home_title: "KBS Services",
+    home_title: "World of Warcraft Anniversary",
     home_subtitle: "Game services and boosts. Website in development.",
     card_boost_title: "WoW Boost",
     card_boost_text: "Fast and safe character boosting.",
@@ -12,7 +12,7 @@ const translations = {
     card_raid_text: "Raids of any difficulty level."
   },
   ru: {
-    home_title: "KBS Services",
+    home_title: "World of Warcraft Anniversary",
     home_subtitle: "Продажа игровых услуг и бустов. Сайт в разработке.",
     card_boost_title: "WoW Boost",
     card_boost_text: "Быстрый и безопасный буст персонажа.",
@@ -69,3 +69,38 @@ function initI18n(defaultLang = "en") {
 
 // делаем доступным в HTML
 window.initI18n = initI18n;
+
+function initReviews() {
+  document.querySelectorAll("[data-review]").forEach(form => {
+    const starsWrap = form.querySelector(".stars");
+    const hidden = form.querySelector('input[name="rating"]');
+
+    if (!starsWrap || !hidden) return;
+
+    starsWrap.dataset.rating = "0";
+
+    starsWrap.querySelectorAll(".star").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const rating = btn.dataset.value;
+        starsWrap.dataset.rating = rating;
+        hidden.value = rating;
+      });
+    });
+
+    // Пока без сервера — просто заглушка
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name = form.querySelector('input[name="name"]').value.trim();
+      const text = form.querySelector('textarea[name="text"]').value.trim();
+      const rating = hidden.value;
+
+      alert(`Saved locally (demo)\\nName: ${name || "Anonymous"}\\nRating: ${rating}\\nText: ${text || "-"}`);
+      form.reset();
+      starsWrap.dataset.rating = "0";
+      hidden.value = "0";
+    });
+  });
+}
+
+// запускаем после загрузки страницы
+window.addEventListener("DOMContentLoaded", initReviews);

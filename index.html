@@ -25,15 +25,28 @@
       />
     </div>
 
-    <!-- LANGUAGE SWITCH -->
-    <div class="lang-switch" aria-label="Language switcher">
-      <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">
-       EN
-       </button>
+    <!-- RIGHT ACTIONS -->
+    <div class="auth-actions">
+
+      <!-- AUTH BUTTONS -->
+      <a href="login.html" class="auth-btn auth-login">Login</a>
+      <a href="register.html" class="auth-btn auth-register">Register</a>
+
+      <!-- LANGUAGE SWITCH -->
+      <button
+        type="button"
+        class="lang-toggle"
+        id="langToggle"
+        aria-label="Switch language"
+      >
+        EN
+      </button>
+
     </div>
 
   </div>
 </header>
+
 
 
 <div class="page-layout">
@@ -84,32 +97,221 @@
 
   </aside>
 
-  <!-- MAIN CONTENT -->
-  <main class="main">
-    <div class="container">
-      <h1 data-i18n="home_title">KBS Services</h1>
-      <p data-i18n="home_subtitle">
+<!-- MAIN CONTENT -->
+<main class="main">
+  <div class="container">
+
+    <!-- HERO (Title + subtitle) -->
+    <section class="hero">
+      <h1 class="hero-title" data-i18n="home_title">World of Warcraft Anniversary</h1>
+      <p class="hero-subtitle" data-i18n="home_subtitle">
         Game services and boosts. Website in development.
       </p>
 
-      <div class="services">
-        <div class="service-card">
-          <h3>WoW Boost</h3>
-          <p>Fast and safe character boosting.</p>
+      <!-- HOT DEALS -->
+      <section class="catalog-panel" aria-label="Hot deals">
+        <div class="catalog-head">
+          <div class="catalog-title" data-i18n="hot_deals_title">Hot Deals</div>
         </div>
 
-        <div class="service-card">
-          <h3>Dungeon Runs</h3>
-          <p>Dungeons with an experienced team.</p>
+        <div class="services services-6">
+          <div class="service-card">
+            <h3 data-i18n="hot1_title">TBC Leveling 1–70</h3>
+            <p data-i18n="hot1_text">Fast leveling with safe methods.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="hot2_title">Dungeon Boost Bundle</h3>
+            <p data-i18n="hot2_text">Multiple runs with great value.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="hot3_title">Heroic Dungeon Keying</h3>
+            <p data-i18n="hot3_text">Unlock heroics quickly.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="hot4_title">Gold Delivery</h3>
+            <p data-i18n="hot4_text">Any realm, fast delivery.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="hot5_title">Raid Carry (Entry)</h3>
+            <p data-i18n="hot5_text">Quick clear with an experienced team.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="hot6_title">PvP Rating Push</h3>
+            <p data-i18n="hot6_text">Play with pros, climb faster.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BEST SELLERS -->
+      <section class="catalog-panel" aria-label="Best sellers">
+        <div class="catalog-head">
+          <div class="catalog-title" data-i18n="best_sellers_title">Best Sellers</div>
         </div>
 
-        <div class="service-card">
-          <h3>Raid Carry</h3>
-          <p>Raids of any difficulty level.</p>
+        <div class="services services-6">
+          <div class="service-card">
+            <h3 data-i18n="best1_title">Dungeon Runs</h3>
+            <p data-i18n="best1_text">Most popular dungeons, flexible schedule.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="best2_title">Raid Carry</h3>
+            <p data-i18n="best2_text">Weekly clears, smooth runs.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="best3_title">Character Boost</h3>
+            <p data-i18n="best3_text">Safe boosting, fast start.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="best4_title">Gearing Package</h3>
+            <p data-i18n="best4_text">Gear upgrades with clear goals.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="best5_title">Professions Powerlevel</h3>
+            <p data-i18n="best5_text">Max your profession efficiently.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="best6_title">Gold Farming</h3>
+            <p data-i18n="best6_text">Steady supply, trusted service.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CURRENT PHASE -->
+      <section class="catalog-panel" aria-label="Current phase">
+        <div class="catalog-head">
+          <div class="catalog-title" data-i18n="phase_title">Current Phase</div>
+        </div>
+
+        <div class="services services-6">
+          <div class="service-card">
+            <h3 data-i18n="phase1_title">Phase Focus: Leveling</h3>
+            <p data-i18n="phase1_text">Best services for the current update.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="phase2_title">Pre-Raid Gearing</h3>
+            <p data-i18n="phase2_text">Get ready for raids faster.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="phase3_title">Attunements</h3>
+            <p data-i18n="phase3_text">Unlock content without stress.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="phase4_title">Heroics & Badges</h3>
+            <p data-i18n="phase4_text">Efficient badge farming.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="phase5_title">Reputation Grind</h3>
+            <p data-i18n="phase5_text">Fast rep for key rewards.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="phase6_title">PvP Season старт</h3>
+            <p data-i18n="phase6_text">Push rating early in the season.</p>
+          </div>
+        </div>
+        
+      </section>
+
+    </section>
+     <!-- REVIEWS -->
+<section class="reviews" aria-label="Reviews">
+  <div class="catalog-head">
+    <div class="catalog-title" data-i18n="reviews_title">Reviews</div>
+  </div>
+
+  <div class="reviews-grid">
+    <!-- Review card 1 -->
+    <form class="review-card" data-review>
+      <div class="review-top">
+        <input class="review-name" type="text" name="name" placeholder="Your name" aria-label="Your name" />
+        <div class="stars" role="radiogroup" aria-label="Rating">
+          <button type="button" class="star" data-value="1" aria-label="1 star">★</button>
+          <button type="button" class="star" data-value="2" aria-label="2 stars">★</button>
+          <button type="button" class="star" data-value="3" aria-label="3 stars">★</button>
+          <button type="button" class="star" data-value="4" aria-label="4 stars">★</button>
+          <button type="button" class="star" data-value="5" aria-label="5 stars">★</button>
+          <input type="hidden" name="rating" value="0" />
         </div>
       </div>
-    </div>
-  </main>
+
+      <textarea class="review-text" name="text" rows="4" placeholder="Write your comment..." aria-label="Write your comment"></textarea>
+
+      <button class="review-submit" type="submit" data-i18n="reviews_submit">Submit</button>
+    </form>
+
+    <!-- Review card 2 -->
+    <form class="review-card" data-review>
+      <div class="review-top">
+        <input class="review-name" type="text" name="name" placeholder="Your name" aria-label="Your name" />
+        <div class="stars" role="radiogroup" aria-label="Rating">
+          <button type="button" class="star" data-value="1" aria-label="1 star">★</button>
+          <button type="button" class="star" data-value="2" aria-label="2 stars">★</button>
+          <button type="button" class="star" data-value="3" aria-label="3 stars">★</button>
+          <button type="button" class="star" data-value="4" aria-label="4 stars">★</button>
+          <button type="button" class="star" data-value="5" aria-label="5 stars">★</button>
+          <input type="hidden" name="rating" value="0" />
+        </div>
+      </div>
+
+      <textarea class="review-text" name="text" rows="4" placeholder="Write your comment..." aria-label="Write your comment"></textarea>
+      <button class="review-submit" type="submit" data-i18n="reviews_submit">Submit</button>
+    </form>
+
+    <!-- Review card 3 -->
+    <form class="review-card" data-review>
+      <div class="review-top">
+        <input class="review-name" type="text" name="name" placeholder="Your name" aria-label="Your name" />
+        <div class="stars" role="radiogroup" aria-label="Rating">
+          <button type="button" class="star" data-value="1" aria-label="1 star">★</button>
+          <button type="button" class="star" data-value="2" aria-label="2 stars">★</button>
+          <button type="button" class="star" data-value="3" aria-label="3 stars">★</button>
+          <button type="button" class="star" data-value="4" aria-label="4 stars">★</button>
+          <button type="button" class="star" data-value="5" aria-label="5 stars">★</button>
+          <input type="hidden" name="rating" value="0" />
+        </div>
+      </div>
+
+      <textarea class="review-text" name="text" rows="4" placeholder="Write your comment..." aria-label="Write your comment"></textarea>
+      <button class="review-submit" type="submit" data-i18n="reviews_submit">Submit</button>
+    </form>
+
+    <!-- Review card 4 -->
+    <form class="review-card" data-review>
+      <div class="review-top">
+        <input class="review-name" type="text" name="name" placeholder="Your name" aria-label="Your name" />
+        <div class="stars" role="radiogroup" aria-label="Rating">
+          <button type="button" class="star" data-value="1" aria-label="1 star">★</button>
+          <button type="button" class="star" data-value="2" aria-label="2 stars">★</button>
+          <button type="button" class="star" data-value="3" aria-label="3 stars">★</button>
+          <button type="button" class="star" data-value="4" aria-label="4 stars">★</button>
+          <button type="button" class="star" data-value="5" aria-label="5 stars">★</button>
+          <input type="hidden" name="rating" value="0" />
+        </div>
+      </div>
+
+      <textarea class="review-text" name="text" rows="4" placeholder="Write your comment..." aria-label="Write your comment"></textarea>
+      <button class="review-submit" type="submit" data-i18n="reviews_submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+  </div>
+</main>
+
 
 </div>
 
