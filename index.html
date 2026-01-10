@@ -36,7 +36,8 @@
 </header>
 
 
-<div class="container layout">
+<div class="page-layout">
+
   <!-- SIDEBAR -->
   <aside class="sidebar" aria-label="Service categories">
     <h2 class="sidebar-title">Categories</h2>
@@ -49,31 +50,69 @@
     <a class="side-link" href="boost.html">Character Boost</a>
     <a class="side-link" href="pvp.html">PvP</a>
     <a class="side-link" href="dungeons.html">Dungeons</a>
+
+    <div class="sidebar-block">
+  <h3 class="sidebar-block-title">Raid announcements</h3>
+
+  <a class="raid-item" href="raids.html">
+    <div class="raid-item-top">
+      <span class="raid-tag">Anniversary</span>
+      <span class="raid-time">Today 20:00</span>
+    </div>
+    <div class="raid-name">Karazhan (TBC)</div>
+    <div class="raid-note">2 spots left • Fast clear</div>
+  </a>
+
+  <a class="raid-item" href="raids.html">
+    <div class="raid-item-top">
+      <span class="raid-tag">Classic Era</span>
+      <span class="raid-time">Sat 18:00</span>
+    </div>
+    <div class="raid-name">Molten Core</div>
+    <div class="raid-note">Loot rules: MS/OS</div>
+  </a>
+
+  <a class="raid-item" href="raids.html">
+    <div class="raid-item-top">
+      <span class="raid-tag">Retail</span>
+      <span class="raid-time">Sun 19:30</span>
+    </div>
+    <div class="raid-name">Mythic Raid Carry</div>
+    <div class="raid-note">Reliable team • Safe</div>
+  </a>
+</div>
+
   </aside>
 
   <!-- MAIN CONTENT -->
   <main class="main">
-    <h1 data-i18n="home_title">KBS Services</h1>
-    <p data-i18n="home_subtitle">Game services and boosts. Website in development.</p>
+    <div class="container">
+      <h1 data-i18n="home_title">KBS Services</h1>
+      <p data-i18n="home_subtitle">
+        Game services and boosts. Website in development.
+      </p>
 
-    <div class="services">
-      <div class="service-card">
-        <h3 data-i18n="card_boost_title">WoW Boost</h3>
-        <p data-i18n="card_boost_text">Fast and safe character boosting.</p>
-      </div>
+      <div class="services">
+        <div class="service-card">
+          <h3>WoW Boost</h3>
+          <p>Fast and safe character boosting.</p>
+        </div>
 
-      <div class="service-card">
-        <h3 data-i18n="card_dungeon_title">Dungeon Runs</h3>
-        <p data-i18n="card_dungeon_text">Dungeons with an experienced team.</p>
-      </div>
+        <div class="service-card">
+          <h3>Dungeon Runs</h3>
+          <p>Dungeons with an experienced team.</p>
+        </div>
 
-      <div class="service-card">
-        <h3 data-i18n="card_raid_title">Raid Carry</h3>
-        <p data-i18n="card_raid_text">Raids of any difficulty level.</p>
+        <div class="service-card">
+          <h3>Raid Carry</h3>
+          <p>Raids of any difficulty level.</p>
+        </div>
       </div>
     </div>
   </main>
+
 </div>
+
 
 <!-- i18n (EN default, RU optional) -->
 <script src="js/i18n.js"></script>
