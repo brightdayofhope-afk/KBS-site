@@ -26,22 +26,167 @@
   <h1 data-i18n="home_title">KBS Services</h1>
   <p data-i18n="home_subtitle">Game services and boosts. Website in development.</p>
 
-  <div class="services">
-    <div class="service-card">
-      <h3 data-i18n="card_boost_title">WoW Boost</h3>
-      <p data-i18n="card_boost_text">Fast and safe character boosting.</p>
+  <div class="container">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1 data-i18n="home_title">KBS Services</h1>
+      <p class="lead" data-i18n="home_subtitle">
+        Game services and boosts. Website in development.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn primary" href="services.html" data-i18n="btn_browse">Browse services</a>
+        <a class="btn ghost" href="#best-deals" data-i18n="btn_order">Order now</a>
+      </div>
+
+      <div class="pill-row" aria-label="Game versions">
+        <button class="pill active" type="button" data-i18n="game_anniv">WoW Anniversary</button>
+        <button class="pill" type="button" data-i18n="game_tbc">Anniversary TBC</button>
+        <button class="pill" type="button" data-i18n="game_retail">WoW Retail</button>
+        <button class="pill" type="button" data-i18n="game_era">Classic Era</button>
+        <button class="pill" type="button" data-i18n="game_sod">Season of Discovery</button>
+      </div>
+
+      <div class="pill-row" aria-label="Service categories">
+        <a class="pill" href="services.html#gold" data-i18n="cat_gold">Gold</a>
+        <a class="pill" href="services.html#leveling" data-i18n="cat_leveling">Leveling</a>
+        <a class="pill" href="services.html#dungeons" data-i18n="cat_dungeons">Dungeons</a>
+        <a class="pill" href="services.html#raids" data-i18n="cat_raids">Raids</a>
+        <a class="pill" href="services.html#pvp" data-i18n="cat_pvp">PvP</a>
+        <a class="pill" href="services.html#prof" data-i18n="cat_prof">Professions</a>
+      </div>
     </div>
 
-    <div class="service-card">
-      <h3 data-i18n="card_dungeon_title">Dungeon Runs</h3>
-      <p data-i18n="card_dungeon_text">Dungeons with an experienced team.</p>
+    <div class="hero-card">
+      <div class="hero-card-top">
+        <div class="badge" data-i18n="badge_fast">Fast start</div>
+        <div class="badge" data-i18n="badge_safe">Safe</div>
+        <div class="badge" data-i18n="badge_support">Support</div>
+      </div>
+
+      <h3 data-i18n="hero_card_title">Popular right now</h3>
+
+      <div class="mini-list">
+        <div class="mini-item">
+          <div>
+            <div class="mini-title" data-i18n="deal1_title">WoW Gold</div>
+            <div class="mini-sub" data-i18n="deal1_sub">Any realm • fast delivery</div>
+          </div>
+          <a class="btn sm" href="services.html#gold" data-i18n="btn_view">View</a>
+        </div>
+
+        <div class="mini-item">
+          <div>
+            <div class="mini-title" data-i18n="deal2_title">Dungeon Runs</div>
+            <div class="mini-sub" data-i18n="deal2_sub">Loot traders • schedule</div>
+          </div>
+          <a class="btn sm" href="services.html#dungeons" data-i18n="btn_view">View</a>
+        </div>
+
+        <div class="mini-item">
+          <div>
+            <div class="mini-title" data-i18n="deal3_title">Raid Carry</div>
+            <div class="mini-sub" data-i18n="deal3_sub">Quick clear • experienced team</div>
+          </div>
+          <a class="btn sm" href="services.html#raids" data-i18n="btn_view">View</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST DEALS -->
+  <section id="best-deals" class="section">
+    <div class="section-head">
+      <h2 data-i18n="best_title">Best deals</h2>
+      <a class="link" href="services.html" data-i18n="best_all">Explore all</a>
     </div>
 
-    <div class="service-card">
-      <h3 data-i18n="card_raid_title">Raid Carry</h3>
-      <p data-i18n="card_raid_text">Raids of any difficulty level.</p>
+    <div class="grid">
+      <article class="deal-card">
+        <h3 data-i18n="card_gold_title">WoW Gold</h3>
+        <p data-i18n="card_gold_text">Safe trades • any server • fast delivery</p>
+        <div class="deal-bottom">
+          <span class="price" data-i18n="price_from">From</span> <span class="price">€0.43</span>
+          <a class="btn sm primary" href="services.html#gold" data-i18n="btn_buy">Buy</a>
+        </div>
+      </article>
+
+      <article class="deal-card">
+        <h3 data-i18n="card_level_title">Power Leveling</h3>
+        <p data-i18n="card_level_text">Fast leveling • flexible schedule</p>
+        <div class="deal-bottom">
+          <span class="price" data-i18n="price_from">From</span> <span class="price">€9.99</span>
+          <a class="btn sm primary" href="services.html#leveling" data-i18n="btn_buy">Buy</a>
+        </div>
+      </article>
+
+      <article class="deal-card">
+        <h3 data-i18n="card_dun_title">Dungeon Runs</h3>
+        <p data-i18n="card_dun_text">Gear runs • loot traders</p>
+        <div class="deal-bottom">
+          <span class="price" data-i18n="price_from">From</span> <span class="price">€12.59</span>
+          <a class="btn sm primary" href="services.html#dungeons" data-i18n="btn_buy">Buy</a>
+        </div>
+      </article>
     </div>
-  </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <h2 data-i18n="how_title">How it works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3 data-i18n="how1_title">Choose a service</h3>
+          <p data-i18n="how1_text">Pick what you need from the catalog.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3 data-i18n="how2_title">Place an order</h3>
+          <p data-i18n="how2_text">We confirm details and start time.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3 data-i18n="how3_title">Service delivery</h3>
+          <p data-i18n="how3_text">We do the work fast and safely.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div>
+          <h3 data-i18n="how4_title">Confirm completion</h3>
+          <p data-i18n="how4_text">You confirm — order is closed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="section">
+    <h2 data-i18n="trust_title">Why choose us</h2>
+    <div class="grid">
+      <article class="info-card">
+        <h3 data-i18n="trust1_title">Best value</h3>
+        <p data-i18n="trust1_text">Fair pricing and transparent options.</p>
+      </article>
+      <article class="info-card">
+        <h3 data-i18n="trust2_title">Moneyback guarantee</h3>
+        <p data-i18n="trust2_text">If we can’t deliver — you get refunded.</p>
+      </article>
+      <article class="info-card">
+        <h3 data-i18n="trust3_title">One-stop shop</h3>
+        <p data-i18n="trust3_text">Gold, leveling, dungeons, raids, PvP.</p>
+      </article>
+    </div>
+  </section>
+</div>
+
 </div>
 
 <!-- i18n (EN default, RU optional) -->
