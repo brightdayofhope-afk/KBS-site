@@ -130,29 +130,6 @@ header {
   border-color: var(--border-accent);
 }
 
-/* Language toggle */
-.lang-toggle {
-  background: var(--bg-panel);
-  border: 1px solid var(--border-main);
-  color: var(--text-main);
-
-  padding: 10px 16px;
-  min-width: 56px;
-  height: 40px;
-
-  border-radius: 10px;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  cursor: pointer;
-
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-}
-
-.lang-toggle:hover {
-  border-color: var(--border-accent);
-  box-shadow: 0 0 0 2px rgba(230, 142, 11, 0.15);
-}
-
 /* JS adds active-ru when RU selected */
 .lang-toggle.active-ru {
   border-color: var(--border-accent);
