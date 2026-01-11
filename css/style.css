@@ -630,3 +630,107 @@ h1 {
   transform: translateY(-1px);
   box-shadow: 0 10px 20px rgba(230, 142, 11, 0.10);
 }
+
+/* ===== Sidebar group (expandable) ===== */
+.side-group {
+  margin-bottom: 8px;
+}
+
+.side-group > summary.side-link {
+  list-style: none;
+  cursor: pointer;
+}
+
+.side-group > summary::-webkit-details-marker {
+  display: none;
+}
+
+.side-sub {
+  margin: 8px 0 6px;
+  padding-left: 10px;
+  border-left: 1px solid rgba(188, 163, 207, 0.35);
+  display: grid;
+  gap: 8px;
+}
+
+.side-sublink {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text-main);
+
+  background: var(--bg-panel-soft);
+  border: 1px solid rgba(188, 163, 207, 0.55);
+
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease;
+}
+
+.side-sublink:hover {
+  border-color: var(--border-accent);
+  background: rgba(230, 142, 11, 0.08);
+}
+
+.side-sublink:active {
+  transform: translateY(1px);
+}
+
+/* ===== Offers (tile buttons) ===== */
+.offer-grid {
+  display: grid;
+  gap: 18px;
+  margin-top: 14px;
+}
+
+/* 5 per row */
+.offer-grid-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+@media (max-width: 1400px) {
+  .offer-grid-5 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 1200px) {
+  .offer-grid-5 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 900px) {
+  .offer-grid-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .offer-grid-5 { grid-template-columns: 1fr; }
+}
+
+.offer-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 110px;
+  padding: 22px 22px;
+
+  border-radius: 18px;
+  text-decoration: none;
+
+  background: linear-gradient(135deg, rgba(8, 29, 58, 0.90), rgba(15, 23, 42, 0.80));
+  border: 1px solid rgba(188, 163, 207, 0.55);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.offer-tile:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-accent);
+  box-shadow: 0 18px 42px rgba(230, 142, 11, 0.22);
+}
+
+.offer-title {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: var(--accent-blue);
+}
+
+.offer-sub {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
