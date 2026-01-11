@@ -40,26 +40,289 @@
   </aside>
 
   <!-- MAIN CONTENT -->
-  <main class="main">
-    <div class="content-wide">
+<main class="main">
+  <div class="content-wide">
 
-      <section class="catalog-panel" aria-label="Offer page">
-        <div class="catalog-head">
-          <div class="catalog-title">Offer</div>
+    <!-- TOP: Offer header -->
+    <section class="catalog-panel" aria-label="Offer header">
+      <div class="catalog-head">
+        <div class="catalog-title">Offer</div>
+      </div>
+
+      <h1 class="hero-title">TBC Pre-Patch Gearing</h1>
+      <p class="hero-subtitle">Prepare for TBC launch</p>
+
+    </section>
+
+    <!-- TWO-COLUMN: DESCRIPTION (LEFT) + OFFER BUILDER (RIGHT) -->
+<section class="offer-two-col" aria-label="Offer details">
+  
+  <!-- LEFT: DESCRIPTION -->
+  <section class="catalog-panel" aria-label="Service description">
+    <div class="catalog-head">
+      <div class="catalog-title">Description</div>
+    </div>
+
+    <div class="offer-description">
+      <p>
+        TBC Pre-Patch Gearing is the fastest way to prepare your character for
+        The Burning Crusade Anniversary release.
+      </p>
+
+      <p>
+        Our team will help you acquire pre-raid Best-in-Slot items efficiently
+        and safely, following manual gameplay only. No bots, no cheats —
+        just experienced players completing the content.
+      </p>
+
+      <p>
+        You can customize your order using additional options such as leveling,
+        honor farming, or live streaming, and see the final price instantly.
+      </p>
+
+      <ul>
+        <li>✔ Manual gameplay only</li>
+        <li>✔ Safe and discreet boosting</li>
+        <li>✔ Flexible options and fast start</li>
+        <li>✔ Suitable for all classes and roles</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RIGHT: OFFER BUILDER (Summary on the right inside builder) -->
+  <section class="catalog-panel offer-builder-panel" aria-label="Offer builder">
+    <div class="catalog-head">
+      <div class="catalog-title">Offer builder</div>
+    </div>
+
+    <div class="offer-builder">
+      <!-- Left: selectors -->
+      <div class="offer-form">
+        <h2 class="offer-h1">Configure your order</h2>
+        <p class="offer-desc">Choose options and see the final price instantly.</p>
+
+        <div class="field">
+          <label class="field-label">Region</label>
+          <div class="segmented" data-name="region">
+            <button type="button" class="seg-btn active" data-value="eu">EU</button>
+            <button type="button" class="seg-btn" data-value="us">US</button>
+          </div>
         </div>
 
-        <h1 class="hero-title">TBC Pre-Patch Gearing</h1>
-        <p class="hero-subtitle">Prepare for TBC launch</p>
-
-        <div class="offer-grid offer-grid-5">
-          <a class="offer-tile" href="../tbc.html">
-            <div class="offer-title">Back to TBC Preorders</div>
-            <div class="offer-sub">Return to catalog</div>
-          </a>
+        <div class="field">
+          <label class="field-label">Boost method</label>
+          <div class="segmented" data-name="method">
+            <button type="button" class="seg-btn active" data-value="piloted">Piloted</button>
+            <button type="button" class="seg-btn" data-value="remote">Remote Control (+30%)</button>
+          </div>
         </div>
+
+        <div class="field">
+          <label class="field-label">Quantity</label>
+          <div class="qty">
+            <button type="button" class="qty-btn" id="qtyMinus">–</button>
+            <input class="qty-input" id="qtyInput" type="number" min="1" value="1" />
+            <button type="button" class="qty-btn" id="qtyPlus">+</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="check">
+            <input type="checkbox" id="express" />
+            <span>⚡ Express start & completion (+30%)</span>
+          </label>
+        </div>
+
+        <div class="field">
+          <div class="field-label">Additional options</div>
+
+          <label class="check">
+            <input type="checkbox" class="addon" data-addon="lvl5860" />
+            <span>58–60 Leveling (+$25.58)</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" class="addon" data-addon="honor75k" />
+            <span>Add 75k Honor Points (+$307.35)</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" class="addon" data-addon="stream" />
+            <span>Live stream (+$11.64)</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Right: summary -->
+      <aside class="offer-summary" aria-label="Order summary">
+        <div class="sum-title">Summary</div>
+
+        <div class="sum-row">
+          <span>Base price</span>
+          <strong id="basePrice">$147.85</strong>
+        </div>
+
+        <div class="sum-row">
+          <span>Multipliers</span>
+          <strong id="multiplierInfo">×1.00</strong>
+        </div>
+
+        <div class="sum-row">
+          <span>Add-ons</span>
+          <strong id="addonsPrice">$0.00</strong>
+        </div>
+
+        <div class="sum-total">
+          <span>Total</span>
+          <strong id="totalPrice">$147.85</strong>
+        </div>
+
+        <div class="sum-meta">
+          <div>⏱ Average start time: <strong>15 minutes</strong></div>
+          <div>✅ Completion: <strong>~4 days</strong></div>
+        </div>
+
+        <button class="primary-btn" id="addToCartBtn" type="button">Add to cart</button>
+
+        <div class="sum-note">
+          Payments later: Stripe / Cards / Apple Pay / Google Pay / PayPal.
+        </div>
+      </aside>
+    </div>
+  </section>
+
+</section>
+
+
+    <!-- REVIEWS (оставь твой реальный блок вместо ...) -->
+    <section class="reviews" aria-label="Reviews">
+      <!-- TODO: paste your existing reviews block here -->
+    </section>
+
+    <!-- YOU MAY ALSO LIKE -->
+    <section class="catalog-panel" aria-label="Recommended services">
+      <div class="catalog-head">
+        <div class="catalog-title">You may also like</div>
+      </div>
+
+      <div class="offer-grid offer-grid-5">
+        <a class="offer-tile" href="../gearing/pre-raid-gear.html">
+          <div class="offer-title">Pre-Raid Gear</div>
+          <div class="offer-sub">Get ready for raids</div>
+        </a>
+
+        <a class="offer-tile" href="../gearing/bis-gear.html">
+          <div class="offer-title">BiS Gear</div>
+          <div class="offer-sub">Best-in-Slot items</div>
+        </a>
+
+        <a class="offer-tile" href="../leveling/dungeon-leveling.html">
+          <div class="offer-title">Dungeon Leveling</div>
+          <div class="offer-sub">Fast XP and loot</div>
+        </a>
+
+        <a class="offer-tile" href="../pvp/honor-points-farm.html">
+          <div class="offer-title">Honor Points Farm</div>
+          <div class="offer-sub">PvP rewards & ranks</div>
+        </a>
+
+        <a class="offer-tile" href="../raids/preorder-karazhan.html">
+          <div class="offer-title">Preorder Karazhan</div>
+          <div class="offer-sub">TBC raid ready</div>
+        </a>
+      </div>
+      </section>
+     <!-- REVIEWS -->
+<section class="reviews" aria-label="Reviews">
+  <div class="catalog-head">
+    <div class="catalog-title" data-i18n="reviews_title">Reviews</div>
+  </div>
+
+  <div class="reviews-grid">
+    <!-- Review card 1 -->
+    <form class="review-card" data-review>
+      <div class="review-top">
+        <input class="review-name" type="text" name="name" placeholder="Your name" aria-label="Your name" />
+        <div class="stars" role="radiogroup" aria-label="Rating">
+          <button type="button" class="star" data-value="1" aria-label="1 star">★</button>
+          <button type="button" class="star" data-value="2" aria-label="2 stars">★</button>
+          <button type="button" class="star" data-value="3" aria-label="3 stars">★</button>
+          <button type="button" class="star" data-value="4" aria-label="4 stars">★</button>
+          <button type="button" class="star" data-value="5" aria-label="5 stars">★</button>
+          <input type="hidden" name="rating" value="0" />
+        </div>
+      </div>
+
+      <textarea class="review-text" name="text" rows="4" placeholder="Write your comment..." aria-label="Write your comment"></textarea>
+
+      <button class="review-submit" type="submit" data-i18n="reviews_submit">Submit</button>
+    </form>
+
+    <!-- Review card 2 -->
+    <form class="review-card" data-review>
+      <div class="review-top">
+        <input class="review-name" type="text" name="name" placeholder="Your name" aria-label="Your name" />
+        <div class="stars" role="radiogroup" aria-label="Rating">
+          <button type="button" class="star" data-value="1" aria-label="1 star">★</button>
+          <button type="button" class="star" data-value="2" aria-label="2 stars">★</button>
+          <button type="button" class="star" data-value="3" aria-label="3 stars">★</button>
+          <button type="button" class="star" data-value="4" aria-label="4 stars">★</button>
+          <button type="button" class="star" data-value="5" aria-label="5 stars">★</button>
+          <input type="hidden" name="rating" value="0" />
+        </div>
+      </div>
+
+      <textarea class="review-text" name="text" rows="4" placeholder="Write your comment..." aria-label="Write your comment"></textarea>
+      <button class="review-submit" type="submit" data-i18n="reviews_submit">Submit</button>
+    </form>
+
+    <!-- Review card 3 -->
+    <form class="review-card" data-review>
+      <div class="review-top">
+        <input class="review-name" type="text" name="name" placeholder="Your name" aria-label="Your name" />
+        <div class="stars" role="radiogroup" aria-label="Rating">
+          <button type="button" class="star" data-value="1" aria-label="1 star">★</button>
+          <button type="button" class="star" data-value="2" aria-label="2 stars">★</button>
+          <button type="button" class="star" data-value="3" aria-label="3 stars">★</button>
+          <button type="button" class="star" data-value="4" aria-label="4 stars">★</button>
+          <button type="button" class="star" data-value="5" aria-label="5 stars">★</button>
+          <input type="hidden" name="rating" value="0" />
+        </div>
+      </div>
+
+      <textarea class="review-text" name="text" rows="4" placeholder="Write your comment..." aria-label="Write your comment"></textarea>
+      <button class="review-submit" type="submit" data-i18n="reviews_submit">Submit</button>
+    </form>
+
+    <!-- Review card 4 -->
+    <form class="review-card" data-review>
+      <div class="review-top">
+        <input class="review-name" type="text" name="name" placeholder="Your name" aria-label="Your name" />
+        <div class="stars" role="radiogroup" aria-label="Rating">
+          <button type="button" class="star" data-value="1" aria-label="1 star">★</button>
+          <button type="button" class="star" data-value="2" aria-label="2 stars">★</button>
+          <button type="button" class="star" data-value="3" aria-label="3 stars">★</button>
+          <button type="button" class="star" data-value="4" aria-label="4 stars">★</button>
+          <button type="button" class="star" data-value="5" aria-label="5 stars">★</button>
+          <input type="hidden" name="rating" value="0" />
+        </div>
+      </div>
+
+      <textarea class="review-text" name="text" rows="4" placeholder="Write your comment..." aria-label="Write your comment"></textarea>
+      <button class="review-submit" type="submit" data-i18n="reviews_submit">Submit</button>
+    </form>
+  </div>
+</section>
+    </section>
+
+  </div>
+</main>
+
+<script src="../../js/offer-builder.js"></script>
 
       </section>
 
+      
     </div>
   </main>
 
